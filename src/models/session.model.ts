@@ -3,8 +3,8 @@ import bcrypt from "bcrypt";
 import config from 'config';
 
 
-export interface UserDocument extends mongoose.Document{
-    user:UserDocument["_id"],
+export interface SessionDocument extends mongoose.Document{
+    user:SessionDocument["_id"],
     valid:boolean,
     userAgent:string,
     createdAt:Date,
